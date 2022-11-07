@@ -1,0 +1,8 @@
+spring:
+  rabbitmq:
+    host: 175.178.220.40
+    port: 5672
+    username: licw
+    password: lcw810905
+    publisher-confirm-type: correlated # 开启发布确认模式
+    publisher-returns: true # 开启回退功能，交换机不能将消息通过routingKey路由到指定队列时，退还消息给生产者
